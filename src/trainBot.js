@@ -13,7 +13,7 @@ async function trainBot(req, res) {
 
     const vectorStore = await HNSWLib.fromDocuments(
       docs,
-      new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
+      new OpenAIEmbeddings({ openAIApiKey: "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" }),
     );
     vectorStore.save("hnswlib");
     console.log("success");

@@ -5,7 +5,7 @@ const fs = require("fs");
 
 async function trainBot(req, res) {
   try {
-    const trainingText = fs.readFileSync("training-data.txt", "utf8");
+    const trainingText = fs.readFileSync("./training-data.txt", "utf8");
     const textSplitter = new RecursiveCharacterTextSplitter({
       chunkSize: 1000,
     });

@@ -13,7 +13,7 @@ async function getAnswer(req, res) {
   try {
     const vectorStore = await HNSWLib.load(
       "hnswlib",
-      new OpenAIEmbeddings({ openAIApiKey: OPENAI_API_KEY }),
+      new OpenAIEmbeddings({ openAIApiKey: "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" }),
     );
 
     const chain = new RetrievalQAChain({
